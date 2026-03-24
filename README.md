@@ -2,12 +2,12 @@
 
 A client library for the BUSCH-JAEGER free@home local API implemented in TypeScript.
 
-![CI](https://img.shields.io/github/actions/workflow/status/pgerke/freeathome-local-api-client/ci.yml?style=flat-square)
-[![codecov](https://codecov.io/gh/pgerke/freeathome-local-api-client/branch/main/graph/badge.svg?token=UJQVXZ5PPM)](https://codecov.io/gh/pgerke/freeathome-local-api-client)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pgerke_freeathome-local-api-client&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pgerke_freeathome-local-api-client)
+![CI](https://img.shields.io/github/actions/workflow/status/lion-and-bear/freeathome-local-api-client/ci.yml?style=flat-square)
+[![codecov](https://codecov.io/gh/lion-and-bear/freeathome-local-api-client/branch/main/graph/badge.svg?token=UJQVXZ5PPM)](https://codecov.io/gh/lion-and-bear/freeathome-local-api-client)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lion-and-bear_freeathome-local-api-client&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=lion-and-bear_freeathome-local-api-client)
 ![Dependencies](https://img.shields.io/librariesio/release/npm/freeathome-local-api-client?style=flat-square)
 ![npm](https://img.shields.io/npm/v/freeathome-local-api-client?style=flat-square)
-![License](https://img.shields.io/github/license/pgerke/freeathome-local-api-client?style=flat-square)
+![License](https://img.shields.io/github/license/lion-and-bear/freeathome-local-api-client?style=flat-square)
 
 If you are using Golang, feel free to check out the Go implementation of this library [here](https://github.com/pgerke/freeathome)!
 
@@ -57,7 +57,7 @@ This package uses npm Trusted Publisher authentication for secure, token-free pu
 
 ## I found a bug, what do I do?
 
-I'm happy to hear any feedback regarding the library or it's implementation, be it critizism, praise or rants. Please create a [GitHub issue](https://github.com/pgerke/freeathome-local-api-client/issues) or drop me an [email](mailto:info@philipgerke.com) if you would like to contact me.
+I'm happy to hear any feedback regarding the library or it's implementation, be it critizism, praise or rants. Please create a [GitHub issue](https://github.com/lion-and-bear/freeathome-local-api-client/issues) or drop me an [email](mailto:info@philipgerke.com) if you would like to contact me.
 
 I would especially appreciate, if you could report any issues you encounter while using the library. Issues I know about, I can probably fix.
 
@@ -72,7 +72,7 @@ While creating a bug report, please make it easy for me to fix it by giving us a
 
 ## I have a feature request, what do I do?
 
-Please create a [GitHub issue](https://github.com/pgerke/freeathome-local-api-client/issues) or drop me an [email](mailto:info@philipgerke.com)!
+Please create a [GitHub issue](https://github.com/lion-and-bear/freeathome-local-api-client/issues) or drop me an [email](mailto:info@philipgerke.com)!
 
 ## Non-Affiliation Disclaimer
 

@@ -5,7 +5,7 @@
   "description": "A client library for the BUSCH-JAEGER free@home local API implemented in TypeScript",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgerke/freeathome-local-api-client.git"
+    "url": "git+https://github.com/lion-and-bear/freeathome-local-api-client.git"
   },
   "keywords": [
     "free@home",
@@ -22,10 +22,10 @@
     "name": "Philip Gerke",
     "url": "https://www.philipgerke.com"
   },
-  "homepage": "https://github.com/pgerke/freeathome-local-api-client#readme",
+  "homepage": "https://github.com/lion-and-bear/freeathome-local-api-client#readme",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pgerke/freeathome-local-api-client/issues"
+    "url": "https://github.com/lion-and-bear/freeathome-local-api-client/issues"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
