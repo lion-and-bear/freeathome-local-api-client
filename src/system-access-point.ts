@@ -1,4 +1,4 @@
-import { EventEmitter } from "events";
+import { EventEmitter } from "node:events";
 import {
   interval,
   type Observable,
@@ -81,7 +81,7 @@ export class SystemAccessPoint extends EventEmitter {
    * @param certificateVerification {boolean} Determines whether the TLS certificate presented by the server will be verified.
    */
   public connectWebSocket(certificateVerification: boolean = true): void {
-    if (this.webSocket && this.webSocket.readyState === WebSocket.OPEN) {
+    if (this.webSocket?.readyState === WebSocket.OPEN) {
       throw new Error("Web socket is already connected");
     }
 
@@ -91,8 +91,7 @@ export class SystemAccessPoint extends EventEmitter {
     this.webSocketKeepaliveSubscription = undefined;
     this.webSocketKeepaliveSubscription =
       this.webSocketKeepaliveTimer$.subscribe(() => {
-        if (!(this.webSocket && this.webSocket.readyState === WebSocket.OPEN))
-          return;
+        if (this.webSocket?.readyState !== WebSocket.OPEN) return;
 
         this.logger.log("keepalive timer expired, sending ping message...");
         this.webSocket.ping();

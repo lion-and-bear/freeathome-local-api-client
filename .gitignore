@@ -1,3 +1,6 @@
+# pnpm store
+.pnpm-store
+
 # API keys and secrets
 .env
 
