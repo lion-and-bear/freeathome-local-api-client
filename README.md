@@ -3,8 +3,8 @@
 A client library for the BUSCH-JAEGER free@home local API implemented in TypeScript.
 
 ![CI](https://img.shields.io/github/actions/workflow/status/lion-and-bear/freeathome-local-api-client/ci.yml?style=flat-square)
-[![codecov](https://codecov.io/gh/lion-and-bear/freeathome-local-api-client/branch/main/graph/badge.svg?token=UJQVXZ5PPM)](https://codecov.io/gh/lion-and-bear/freeathome-local-api-client)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lion-and-bear_freeathome-local-api-client&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=lion-and-bear_freeathome-local-api-client)
+[![codecov](https://codecov.io/gh/lion-and-bear/freeathome-local-api-client/graph/badge.svg?token=aQv7Oewynk)](https://codecov.io/gh/lion-and-bear/freeathome-local-api-client)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=freeathome-local-api-client&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=freeathome-local-api-client)
 ![Dependencies](https://img.shields.io/librariesio/release/npm/freeathome-local-api-client?style=flat-square)
 ![npm](https://img.shields.io/npm/v/freeathome-local-api-client?style=flat-square)
 ![License](https://img.shields.io/github/license/lion-and-bear/freeathome-local-api-client?style=flat-square)
