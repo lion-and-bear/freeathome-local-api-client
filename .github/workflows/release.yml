@@ -63,14 +63,14 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: lts/*
           registry-url: "https://registry.npmjs.org"
       - name: Update npm to support OIDC
         run: npm install -g npm@^11.5.1
       - name: Restore pnpm store
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ${{ needs.cache_dependencies.outputs.pnpm-store-path }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
