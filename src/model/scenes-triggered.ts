@@ -1,6 +1,6 @@
 /**
  * Describes the ScenesTriggered object that is included in the web socket message.
- * @see WebSocketMessage
+ * @see {@link WebSocketMessage}
  */
 export interface ScenesTriggered {
   /** The channels affected by the scene identified by the key. */
