@@ -1,0 +1,71 @@
+name: Documentation
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "src/**"
+      - "README.md"
+      - "LICENSE"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "typedoc.json"
+      - ".github/workflows/docs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  cache_dependencies:
+    name: Cache dependencies
+    uses: ./.github/workflows/dependency_cache.yml
+    secrets: inherit
+
+  build:
+    name: Build Documentation
+    runs-on: ubuntu-latest
+    needs: cache_dependencies
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: lts/*
+      - name: Restore pnpm store
+        uses: actions/cache@v6
+        with:
+          path: ${{ needs.cache_dependencies.outputs.pnpm-store-path }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Restore dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build documentation
+        run: pnpm build:docs
+      - name: Upload documentation
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs
+
+  deploy:
+    name: Deploy Documentation
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
