@@ -52,6 +52,7 @@
     "clean": "rimraf dist coverage",
     "build": "pnpm clean && tsup --config tsup.config.ts",
     "build:test": "pnpm clean && tsup --config tsup.test.config.ts",
+    "build:docs": "rimraf docs && typedoc",
     "test:esm": "NODE_OPTIONS=\"--conditions=test-esm\" jasmine --config=jasmine.json",
     "test:cjs": "NODE_OPTIONS=\"--conditions=test-cjs\" jasmine --config=jasmine.json",
     "test:coverage": "pnpm build:test && c8 pnpm run test:cjs",
@@ -82,6 +83,7 @@
     "rimraf": "^6.1.3",
     "ts-interface-builder": "^0.3.3",
     "tsup": "^8.5.1",
+    "typedoc": "^0.28.20",
     "typescript": "^6.0.3"
   },
   "packageManager": "pnpm@12.6.0+sha512.3ef68f951cb111ac204b4a5a16f0b2ddf0da56a96e0413e81d855d9f0b55ef926714709028e1cd00c405c2c5fb7b9e8ec4dc46777c805d0373c2f2ff00fd20ec"

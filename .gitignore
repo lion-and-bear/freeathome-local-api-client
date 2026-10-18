@@ -19,3 +19,6 @@ coverage
 
 # SonarQube Scanner
 .scannerwork
+
+# Generated API documentation
+docs

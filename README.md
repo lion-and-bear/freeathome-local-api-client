@@ -35,7 +35,8 @@ npm install --save freeathome-local-api-client
 
 ## Documentation
 
-The client library is documented using JSDoc, the generated documentation is available at https://pgerke.github.io/freeathome-local-api-client/.
+The client library is documented using [TypeDoc](https://typedoc.org), the generated documentation is available at https://lion-and-bear.github.io/freeathome-local-api-client/.
+It is published automatically by the `Documentation` GitHub Actions workflow whenever relevant changes reach the main branch. To build it locally, run `pnpm build:docs` and open `docs/index.html`.
 There is also a sample project illustrating the use of the library can be found at https://github.com/pgerke/freeathome-local-api-sample. It illustrates usage for ESM as well as CommonJs.
 
 ## Publishing
