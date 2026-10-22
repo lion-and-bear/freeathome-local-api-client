@@ -103,10 +103,10 @@ function check(
 
 /**
  * Determines whether the specified object is a web socket message.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a web socket message.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a web socket message.
  */
 export function isWebSocketMessage(
   obj: unknown,
@@ -118,10 +118,10 @@ export function isWebSocketMessage(
 
 /**
  * Determines whether the specified object is a configuration.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a configuration.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a configuration.
  */
 export function isConfiguration(
   obj: unknown,
@@ -133,10 +133,10 @@ export function isConfiguration(
 
 /**
  * Determines whether the specified object is a device list.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a device list.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a device list.
  */
 export function isDeviceList(
   obj: unknown,
@@ -148,10 +148,10 @@ export function isDeviceList(
 
 /**
  * Determines whether the specified object is a device response.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a device response.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a device response.
  */
 export function isDeviceResponse(
   obj: unknown,
@@ -163,10 +163,10 @@ export function isDeviceResponse(
 
 /**
  * Determines whether the specified object is a valid response to a get data point request.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a response to a get data point request.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a response to a get data point request.
  */
 export function isGetDataPointResponse(
   obj: unknown,
@@ -178,10 +178,10 @@ export function isGetDataPointResponse(
 
 /**
  * Determines whether the specified object is a valid response to a set data point request.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a response to a set data point request.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a response to a set data point request.
  */
 export function isSetDataPointResponse(
   obj: unknown,
@@ -193,10 +193,10 @@ export function isSetDataPointResponse(
 
 /**
  * Determines whether the specified object is a virtual device.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a virtual device.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a virtual device.
  */
 export function isVirtualDevice(
   obj: unknown,
@@ -208,10 +208,10 @@ export function isVirtualDevice(
 
 /**
  * Determines whether the specified object is a virtual device response.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a response to a virtual device request.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a response to a virtual device request.
  */
 export function isVirtualDeviceResponse(
   obj: unknown,
@@ -223,10 +223,10 @@ export function isVirtualDeviceResponse(
 
 /**
  * Determines whether the specified object is a channel.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a channel.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a channel.
  */
 export function isChannel(
   obj: unknown,
@@ -238,10 +238,10 @@ export function isChannel(
 
 /**
  * Determines whether the specified object is a device.
- * @param obj {object} The object to be tested
- * @param logger {Logger} The logger instance to be used.
- * @param verbose {boolean} Determines whether validation errors shall be logged. Default value is false.
- * @returns {boolean} A value indicating whether the specified object is a device.
+ * @param obj The object to be tested
+ * @param logger The logger instance to be used.
+ * @param verbose Determines whether validation errors shall be logged. Default value is false.
+ * @returns A value indicating whether the specified object is a device.
  */
 export function isDevice(
   obj: unknown,
