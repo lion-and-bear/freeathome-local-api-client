@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.18.0 - 01.11.2026
+
+### Changed
+
+- Bump dependencies
+- Bump jasmine and @types/jasmine to v7
+- Bump @types/node to v26 (Node.js 26 LTS)
+- Update pre-commit hooks
+- Update pnpm to 12.16.1 via Corepack
+
 ## 1.17.0 - 22.10.2026
 
 ### Changed
